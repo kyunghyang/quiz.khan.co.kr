@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/etc.css">
+</head>
+<body>
+
+    <div class="container sub">
+
+			<!-- 현재 위치 -->
+			<div class="breadcrumb">
+				<span><a href="https://www.khan.co.kr" title="경향신문">경향신문</a></span>
+				<span>
+					<a href="kh_ranking.html" title="랭킹">
+                        <strong>랭킹</strong>
+                    </a>
+				</span>
+			</div>
+			<!-- // 현재 위치 -->
+
+
+        <!-- section -->
+        <div class="section">
+            <!-- inner -->
+            <div class="inner">
+                <!-- cont-main -->
+                <div class="cont-main">
+                    <div class="title-wrap">
+                        <h3 class="sct_tit"> 랭킹 </h3>
+                    </div>
+
+                    <!-- ** 랭킹 콘텐츠 ** -->
+                    <div class="khrank mainarea">
+                        <ul class="maintab">
+                            <li class="active" data-tab="maintab_1">
+                                전체
+                                <i class="xi-angle-down"></i>
+                            </li>
+                            <li class="" data-tab="maintab_2">
+                                기사
+                                <i class="xi-angle-down"></i>
+                            </li>
+                            <li class="" data-tab="maintab_3">
+                                퀴즈
+                                <i class="xi-angle-down"></i>
+                            </li>
+                            <li class="" data-tab="maintab_4">
+                                큐레이션
+                                <i class="xi-angle-down"></i>
+                            </li>
+                        </ul>
+
+                        <div class="tab_content active" id="maintab_1">
+                            <div class="khrank_top">
+                                <p class="guide">
+                                    [기사완독 + 퀴즈 + 큐레이션을 통해 획득한 경험치 합산 랭킹입니다.]
+                                </p>
+                                <div class="search_wrap">
+                                    <select name="" id="">
+                                        <option value="2022년">2022년</option>
+                                        <option value="2021년">2021년</option>
+                                        <option value="2020년">2020년</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="1월">1월</option>
+                                        <option value="2월">2월</option>
+                                        <option value="3월">3월</option>
+                                        <option value="4월">4월</option>
+                                        <option value="5월">5월</option>
+                                        <option value="6월">6월</option>
+                                        <option value="7월">7월</option>
+                                        <option value="8월">8월</option>
+                                        <option value="9월">9월</option>
+                                        <option value="10월">10월</option>
+                                        <option value="11월">11월</option>
+                                        <option value="12월">12월</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="일간">일간</option>
+                                        <option value="주간">주간</option>
+                                        <option value="월간">월간</option>
+                                    </select>
+                                    <div class="date_select">
+                                        <input type="date">
+                                        ~
+                                        <input type="date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="khrank_area">
+                                <table>
+                                    <colgroup>
+                                        <col width="20%">
+                                        <col width="40%">
+                                        <col width="40%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>순위</th>
+                                            <th>ID</th>
+                                            <th>포인트</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    1
+                                                    <span class="fst_icon">
+                                                        <i class="xi-crown"></i>
+                                                    </span>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    2
+                                                </p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>3</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>4</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>5</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>6</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>7</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>8</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>9</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="tab_content" id="maintab_2">
+                            <div class="khrank_top">
+                                <p class="guide">
+                                    [기사완독을 통해 획득한 경험치 합산 랭킹입니다.]
+                                </p>
+                                <div class="search_wrap">
+                                    <select name="" id="">
+                                        <option value="2022년">2022년</option>
+                                        <option value="2021년">2021년</option>
+                                        <option value="2020년">2020년</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="1월">1월</option>
+                                        <option value="2월">2월</option>
+                                        <option value="3월">3월</option>
+                                        <option value="4월">4월</option>
+                                        <option value="5월">5월</option>
+                                        <option value="6월">6월</option>
+                                        <option value="7월">7월</option>
+                                        <option value="8월">8월</option>
+                                        <option value="9월">9월</option>
+                                        <option value="10월">10월</option>
+                                        <option value="11월">11월</option>
+                                        <option value="12월">12월</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="일간">일간</option>
+                                        <option value="주간">주간</option>
+                                        <option value="월간">월간</option>
+                                    </select>
+                                    <div class="date_select">
+                                        <input type="date">
+                                        ~
+                                        <input type="date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="khrank_area">
+                                <table>
+                                    <colgroup>
+                                        <col width="20%">
+                                        <col width="40%">
+                                        <col width="40%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>순위</th>
+                                            <th>ID</th>
+                                            <th>포인트</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    1
+                                                    <span class="fst_icon">
+                                                        <i class="xi-crown"></i>
+                                                    </span>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    2
+                                                </p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>3</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>4</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>5</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>6</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>7</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>8</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>9</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="tab_content" id="maintab_3">
+                            <div class="khrank_top">
+                                <p class="guide">
+                                    [퀴즈를 통해 획득한 경험치 합산 랭킹입니다.]
+                                </p>
+                                <div class="search_wrap">
+                                    <select name="" id="">
+                                        <option value="2022년">2022년</option>
+                                        <option value="2021년">2021년</option>
+                                        <option value="2020년">2020년</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="1월">1월</option>
+                                        <option value="2월">2월</option>
+                                        <option value="3월">3월</option>
+                                        <option value="4월">4월</option>
+                                        <option value="5월">5월</option>
+                                        <option value="6월">6월</option>
+                                        <option value="7월">7월</option>
+                                        <option value="8월">8월</option>
+                                        <option value="9월">9월</option>
+                                        <option value="10월">10월</option>
+                                        <option value="11월">11월</option>
+                                        <option value="12월">12월</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="일간">일간</option>
+                                        <option value="주간">주간</option>
+                                        <option value="월간">월간</option>
+                                    </select>
+                                    <div class="date_select">
+                                        <input type="date">
+                                        ~
+                                        <input type="date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="khrank_area">
+                                <table>
+                                    <colgroup>
+                                        <col width="20%">
+                                        <col width="40%">
+                                        <col width="40%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>순위</th>
+                                            <th>ID</th>
+                                            <th>포인트</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    1
+                                                    <span class="fst_icon">
+                                                        <i class="xi-crown"></i>
+                                                    </span>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    2
+                                                </p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>3</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>4</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>5</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>6</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>7</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>8</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>9</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="tab_content" id="maintab_4">
+                            <div class="khrank_top">
+                                <p class="guide">
+                                    [큐레이션을 통해 획득한 경험치 합산 랭킹입니다.]
+                                </p>
+                                <div class="search_wrap">
+                                    <select name="" id="">
+                                        <option value="2022년">2022년</option>
+                                        <option value="2021년">2021년</option>
+                                        <option value="2020년">2020년</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="1월">1월</option>
+                                        <option value="2월">2월</option>
+                                        <option value="3월">3월</option>
+                                        <option value="4월">4월</option>
+                                        <option value="5월">5월</option>
+                                        <option value="6월">6월</option>
+                                        <option value="7월">7월</option>
+                                        <option value="8월">8월</option>
+                                        <option value="9월">9월</option>
+                                        <option value="10월">10월</option>
+                                        <option value="11월">11월</option>
+                                        <option value="12월">12월</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="일간">일간</option>
+                                        <option value="주간">주간</option>
+                                        <option value="월간">월간</option>
+                                    </select>
+                                    <div class="date_select">
+                                        <input type="date">
+                                        ~
+                                        <input type="date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="khrank_area">
+                                <table>
+                                    <colgroup>
+                                        <col width="20%">
+                                        <col width="40%">
+                                        <col width="40%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>순위</th>
+                                            <th>ID</th>
+                                            <th>포인트</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    1
+                                                    <span class="fst_icon">
+                                                        <i class="xi-crown"></i>
+                                                    </span>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    2
+                                                </p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>3</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>4</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>5</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>6</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>7</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>8</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>9</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ** //랭킹 콘텐츠 ** -->
+
+                </div>
+                <!-- // cont-main -->
+
+            </div>
+            <!-- // inner -->
+        </div>
+        <!-- // section -->
+		</div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+
+        //탭 링크
+        $('.maintab li').click(function(){
+            $(".maintab li").removeClass("active");
+            $(this).addClass("active");
+            var tab_id = $(this).attr('data-tab');
+            $('.tab_content').removeClass('active');
+
+            $(".tab_content#"+tab_id).addClass('active');
+        });
+
+    </script>
+</body>
+</html>

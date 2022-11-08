@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/popup.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- 기사 완독 -->
+        <div class="kh_popup">
+            <div class="popup_box">
+                <p class="notice_txt">
+                    기사 완독! 경험치 획득 +<span>3</span>
+                </p>
+            </div>
+        </div>
+        <!-- // 기사 완독 -->
+
+        <!-- 큐레이션 저장 완료 -->
+        <div class="kh_popup">
+            <div class="popup_box">
+                <p class="popup_title">
+                    큐레이션 저장
+                </p>
+                <div class="popup_con">
+                    <div class="curation_container">
+                        <ul class="curation_list">
+                            <li>
+                                <div class="curation_select">
+                                    <label for="curation_1">
+                                        <input type="radio" id="curation_1" name="curation_select">
+                                        <span class="select_icon">
+                                            <i class="xi-check"></i>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="curation_box">
+                                    <div class="img_box">
+                                        <img src="https://img.khan.co.kr/news/c/320x220/2022/09/15/news-p.v1.20220915.98d40b228d2b432f8e5b42b40a953a07_P1.jpg" class="thumb_g" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="curation_select">
+                                    <label for="curation_2">
+                                        <input type="radio" id="curation_2" name="curation_select">
+                                        <span class="select_icon">
+                                            <i class="xi-check"></i>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="curation_box">
+                                    <div class="img_box">
+                                        <img src="https://img.khan.co.kr/news/c/320x220/2022/09/15/news-p.v1.20220915.98d40b228d2b432f8e5b42b40a953a07_P1.jpg" class="thumb_g" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="curation_select">
+                                    <label for="curation_3">
+                                        <input type="radio" id="curation_3" name="curation_select">
+                                        <span class="select_icon">
+                                            <i class="xi-check"></i>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="curation_box">
+                                    <div class="img_box">
+                                        <img src="https://img.khan.co.kr/news/c/320x220/2022/09/15/news-p.v1.20220915.98d40b228d2b432f8e5b42b40a953a07_P1.jpg" class="thumb_g" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="curation_add">
+                                <p>
+                                    <i class="xi-plus"></i>
+                                    큐레이션 만들기
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn_wrap">
+                    <button type="button" class="popup_btn">저장</button>
+                    <button type="button" class="popup_btn close">취소</button>
+                </div>
+            </div>
+        </div>
+        <!-- // 큐레이션 저장 완료 -->
+
+        <!-- 큐레이션 저장 완료 -->
+        <div class="kh_popup">
+            <div class="popup_box">
+                <p>
+                    큐레이션에 저장되었습니다.
+                </p>
+                <div class="btn_wrap">
+                    <button type="button" class="popup_btn">확인</button>
+                </div>
+            </div>
+        </div>
+        <!-- // 큐레이션 저장 완료 -->
+
+        <!-- 큐레이션 생성 -->
+        <div class="kh_popup">
+            <div class="popup_box">
+                <p class="popup_title">
+                    큐레이션 만들기
+                </p>
+                <div class="popup_con">
+                    <input type="text" placeholder="2022-01-01">
+                </div>
+                <div class="btn_wrap">
+                    <button type="button" class="popup_btn cancel">취소</button>
+                    <button type="button" class="popup_btn">만들기</button>
+                </div>
+            </div>
+        </div>
+        <!-- // 큐레이션 생성 -->
+
+        <!-- 큐레이션 생성 완료 -->
+        <div class="kh_popup">
+            <div class="popup_box">
+                <p class="notice_txt">
+                    큐레이션 생성 완료! 기사를 저장하고 템플릿을 꾸며보세요.
+                </p>
+            </div>
+        </div>
+        <!-- // 큐레이션 생성 완료 -->
+
+        <!-- 큐레이션 삭제 -->
+        <div class="kh_popup">
+            <div class="popup_box">
+                <p>
+                    선택 큐레이션을 삭제 하시겠습니까?
+                </p>
+                <div class="btn_wrap">
+                    <button type="button" class="popup_btn cancel">취소</button>
+                    <button type="button" class="popup_btn">삭제</button>
+                </div>
+            </div>
+        </div>
+        <!-- // 큐레이션 삭제 -->
+
+        <!-- 템플릿 -->
+        <div class="kh_popup">
+            <div class="popup_box temp">
+                <p class="popup_title">
+                    현재 적용 템플릿
+                </p>
+                <div class="popup_con">
+                    <ul class="temp_list">
+                        <li class="temp_grade_1">
+                            <label for="temp_default">
+                                <div class="temp_grade">
+                                    <p>
+                                        <span>1</span>Lv
+                                    </p>
+                                    <span class="badge"></span>
+                                </div>
+                                <div class="temp_obj">
+                                    <div class="temp_select">
+                                        <input type="radio" id="temp_default" name="temp_default" checked>
+                                        <span class="select_icon">
+                                            <i class="xi-check"></i>
+                                        </span>
+                                    </div>
+                                    <p class="temp_txt">
+                                        텍스트 컬러
+                                    </p>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <p class="popup_title">
+                    모든 템플릿
+                </p>
+                <div class="popup_con">
+                    <ul class="temp_list">
+                        <li class="temp_grade_1">
+                            <label for="temp_1">
+                                <div class="temp_grade">
+                                    <p>
+                                        <span>1</span>Lv
+                                    </p>
+                                    <span class="badge"></span>
+                                </div>
+                                <div class="temp_obj">
+                                    <div class="temp_select">
+                                        <input type="radio" id="temp_1" name="temp_select" checked>
+                                        <span class="select_icon">
+                                            <i class="xi-check"></i>
+                                        </span>
+                                    </div>
+                                    <p class="temp_txt">
+                                        텍스트 컬러
+                                    </p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="temp_grade_2">
+                            <label for="temp_2">
+                                <div class="temp_grade">
+                                    <p>
+                                        <span>2</span>Lv
+                                    </p>
+                                    <span class="badge"></span>
+                                </div>
+                                <div class="temp_obj">
+                                    <div class="temp_select">
+                                        <input type="radio" id="temp_2" name="temp_select">
+                                        <span class="select_icon">
+                                            <i class="xi-check"></i>
+                                        </span>
+                                    </div>
+                                    <p class="temp_txt">
+                                        텍스트 컬러
+                                    </p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="temp_grade_3">
+                            <label for="temp_3">
+                                <div class="temp_grade">
+                                    <p>
+                                        <span>3</span>Lv
+                                    </p>
+                                    <span class="badge"></span>
+                                </div>
+                                <div class="temp_obj">
+                                    <div class="temp_select">
+                                        <input type="radio" id="temp_3" name="temp_select">
+                                        <span class="select_icon">
+                                            <i class="xi-check"></i>
+                                        </span>
+                                    </div>
+                                    <p class="temp_txt">
+                                        텍스트 컬러
+                                    </p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="temp_grade_4">
+                            <label for="temp_4">
+                                <div class="temp_grade">
+                                    <p>
+                                        <span>4</span>Lv
+                                    </p>
+                                    <span class="badge"></span>
+                                </div>
+                                <div class="temp_obj">
+                                    <div class="temp_select">
+                                        <input type="radio" id="temp_4" name="temp_select">
+                                        <span class="select_icon">
+                                            <i class="xi-check"></i>
+                                        </span>
+                                    </div>
+                                    <p class="temp_txt">
+                                        텍스트 컬러
+                                    </p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="temp_grade_5">
+                            <label for="temp_5">
+                                <div class="temp_grade">
+                                    <p>
+                                        <span>5</span>Lv
+                                    </p>
+                                    <span class="badge"></span>
+                                </div>
+                                <div class="temp_obj">
+                                    <div class="temp_select">
+                                        <input type="radio" id="temp_5" name="temp_select">
+                                        <span class="select_icon">
+                                            <i class="xi-check"></i>
+                                        </span>
+                                    </div>
+                                    <p class="temp_txt">
+                                        텍스트 컬러
+                                    </p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="temp_grade_6">
+                            <label for="temp_6">
+                                <div class="temp_grade">
+                                    <p>
+                                        <span>6</span>Lv
+                                    </p>
+                                    <span class="badge"></span>
+                                </div>
+                                <div class="temp_obj">
+                                    <div class="temp_select">
+                                        <input type="radio" id="temp_6" name="temp_select">
+                                        <span class="select_icon">
+                                            <i class="xi-check"></i>
+                                        </span>
+                                    </div>
+                                    <p class="temp_txt">
+                                        텍스트 컬러
+                                    </p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="temp_grade_7">
+                            <label for="temp_7">
+                                <div class="temp_grade">
+                                    <p>
+                                        <span>7</span>Lv
+                                    </p>
+                                    <span class="badge"></span>
+                                </div>
+                                <div class="temp_obj">
+                                    <div class="temp_select">
+                                        <input type="radio" id="temp_7" name="temp_select">
+                                        <span class="select_icon">
+                                            <i class="xi-check"></i>
+                                        </span>
+                                    </div>
+                                    <p class="temp_txt">
+                                        텍스트 컬러
+                                    </p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="temp_grade_8">
+                            <label for="temp_8">
+                                <div class="temp_grade">
+                                    <p>
+                                        <span>8</span>Lv
+                                    </p>
+                                    <span class="badge"></span>
+                                </div>
+                                <div class="temp_obj">
+                                    <div class="temp_select">
+                                        <input type="radio" id="temp_8" name="temp_select">
+                                        <span class="select_icon">
+                                            <i class="xi-check"></i>
+                                        </span>
+                                    </div>
+                                    <p class="temp_txt">
+                                        텍스트 컬러
+                                    </p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="temp_grade_9">
+                            <label for="temp_9">
+                                <div class="temp_grade">
+                                    <p>
+                                        <span>9</span>Lv
+                                    </p>
+                                    <span class="badge"></span>
+                                </div>
+                                <div class="temp_obj">
+                                    <div class="temp_select">
+                                        <input type="radio" id="temp_9" name="temp_select" disabled>
+                                        <span class="select_icon">
+                                            <i class="xi-check"></i>
+                                        </span>
+                                        <span class="select_icon non_select"> <!-- 템플릿 잠금 -->
+                                            <i class="xi-lock"></i>
+                                        </span>
+                                    </div>
+                                    <p class="temp_txt">
+                                        텍스트 컬러
+                                    </p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="temp_grade_10">
+                            <label for="temp_10">
+                                <div class="temp_grade">
+                                    <p>
+                                        <span>10</span>Lv
+                                    </p>
+                                    <span class="badge"></span>
+                                </div>
+                                <div class="temp_obj">
+                                    <div class="temp_select">
+                                        <input type="radio" id="temp_10" name="temp_select" disabled>
+                                        <span class="select_icon">
+                                            <i class="xi-check"></i>
+                                        </span>
+                                        <span class="select_icon non_select"> <!-- 템플릿 잠금 -->
+                                            <i class="xi-lock"></i>
+                                        </span>
+                                    </div>
+                                    <p class="temp_txt">
+                                        텍스트 컬러
+                                    </p>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn_wrap">
+                    <button type="button" class="popup_btn cancel">취소</button>
+                    <button type="button" class="popup_btn">저장하기</button>
+                </div>
+            </div>
+        </div>
+        <!-- // 템플릿 -->
+
+    </div>
+<script src="./js/jquery.js"></script>
+<script src="./js/script.js"></script>
+<script>
+
+    //탭 링크
+    $('.maintab li').click(function(){
+        $(".maintab li").removeClass("active");
+        $(this).addClass("active");
+        var tab_id = $(this).attr('data-tab');
+        $('.tab_content').removeClass('active');
+
+        $(".tab_content#"+tab_id).addClass('active');
+    });
+
+</script>
+</body>
+</html>

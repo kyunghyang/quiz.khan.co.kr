@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/etc.css">
+</head>
+<body>
+
+    <div class="container sub">
+
+			<!-- 현재 위치 -->
+			<div class="breadcrumb">
+				<span><a href="https://www.khan.co.kr" title="경향신문">경향신문</a></span>
+				<span>
+					<a href="kh_quiz.html" title="오늘의 퀴즈">
+                        <strong>오늘의 퀴즈</strong>
+                    </a>
+				</span>
+			</div>
+			<!-- // 현재 위치 -->
+
+
+        <!-- section -->
+        <div class="section">
+            <!-- inner -->
+            <div class="inner">
+                <!-- cont-main -->
+                <div class="cont-main">
+                    <div class="title-wrap">
+                        <h3 class="sct_tit"> 오늘의 퀴즈 </h3>
+                    </div>
+
+                    <!-- ** 오늘의 퀴즈 콘텐츠 ** -->
+                    <div class="khquiz khrank mainarea">
+                        <ul class="maintab">
+                            <li class="active" data-tab="maintab_1">
+                                퀴즈 풀기
+                                <i class="xi-angle-down"></i>
+                            </li>
+                            <li class="" data-tab="maintab_2">
+                                퀴즈 랭킹
+                                <i class="xi-angle-down"></i>
+                            </li>
+                            <li class="" data-tab="maintab_3">
+                                퀴즈 내역
+                                <i class="xi-angle-down"></i>
+                            </li>
+                        </ul>
+
+                        <div class="tab_content active" id="maintab_1">
+                            <div class="khquiz_area">
+
+                                <!-- 출제된 퀴즈가 없을 때 -->
+                                <div class="info_list_area">
+                                    <p class="hl">
+                                        오늘 출제된 퀴즈가 없어요! <br>
+                                        다음에 이용해 주세요.
+                                    </p>
+                                </div>
+                                <!-- //출제된 퀴즈가 없을 때 -->
+    
+                                <!-- 퀴즈풀기 -->
+                                <div class="quizlist">
+                                    <div class="quiz_q">
+                                        <p>
+                                            Q.
+                                            <span>경기침체, 물가상승의 동시발생을 의미하는 단어는?</span>
+                                        </p>
+                                    </div>
+                                    <div class="quiz_a">
+                                        <div class="quiz_a_main">
+                                            <!-- <div class="quiz_state">
+                                                <p class="wrong">오답입니다. 다음 문제에 도전해보세요.</p>
+                                                <p class="correct">정답입니다!  경험치 +<span>2</span> 를 획득하셨습니다!</p>
+                                            </div> -->
+                                            <ul class="quiz_obj">
+                                                <li>
+                                                    <label for="quiz_obj_1">
+                                                        <input type="radio" id="quiz_obj_1" name="quiz_obj">
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 1
+                                                            </p>
+                                                            <div class="check_icon">
+                                                                <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span>
+                                                                <!-- <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span> -->
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="quiz_obj_2">
+                                                        <input type="radio" id="quiz_obj_2" name="quiz_obj">
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 2
+                                                            </p>
+                                                            
+                                                            <div class="check_icon">
+                                                                <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span>
+                                                                <!-- <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span> -->
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="quiz_obj_3">
+                                                        <input type="radio" id="quiz_obj_3" name="quiz_obj">
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 3
+                                                            </p>
+                                                            <div class="check_icon">
+                                                                <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span>
+                                                                <!-- <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span> -->
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="quiz_obj_4">
+                                                        <input type="radio" id="quiz_obj_4" name="quiz_obj">
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 4
+                                                            </p>
+                                                            <div class="check_icon">
+                                                                <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span>
+                                                                <!-- <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span> -->
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <div class="btn_wrap">
+                                                <a href="#" class="next">정답 확인하기</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //퀴즈풀기 -->
+
+                                <!-- 퀴즈 결과 -->
+                                <div class="quizlist">
+                                    <div class="quiz_totay">
+                                        오늘의 퀴즈 결과 <span>2022-08-08</span>
+                                    </div>
+                                    <div class="quiz_a_main">
+                                        <p class="quiz_total_txt">
+                                            <span>홍길동</span>님, 오늘 <span>4</span>개의 퀴즈 중 <span>3</span>개를 맞추셨어요!
+                                        </p>
+                                        <div class="quiz_graph_wrap">
+                                            <p class="quiz_total_num">
+                                                <span>3</span>/<span>4</span>
+                                            </p>
+                                            <div class="quiz_graph">
+                                                <div class="core"></div>
+                                            </div>
+                                        </div>
+                                        <div class="btn_wrap">
+                                            <a href="#">공유하기</a>
+                                            <a href="#" class="next">다음 문제</a>
+                                        </div>
+                                    </div>
+                                    <div class="quiz_btm">
+                                        <p>관련 기사 보러가기 <i class="xi-arrow-right"></i></p>
+                                        <a href="">기사 제목</a>
+                                    </div>
+                                </div>
+                                <!-- //퀴즈 결과 -->
+
+                                <!-- 해설보기 -->
+                                <div class="quizlist">
+                                    <div class="quiz_q">
+                                        <p>
+                                            Q.
+                                            <span>경기침체, 물가상승의 동시발생을 의미하는 단어는?</span>
+                                        </p>
+                                    </div>
+                                    <div class="quiz_a">
+                                        <div class="quiz_a_main">
+                                            <div class="quiz_exp">
+                                                <h3>
+                                                    경기침체, 물가상승의 동시발생을 의미하는 단어는?
+                                                </h3>
+                                                <p>
+                                                    경기침체, 물가상승의 동시발생을 의미하는 단어는?경기침체, 물가상승의 동시발생을 의미하는 단어는?경기침체, 물가상승의 동시발생을 의미하는 단어는?경기침체, 물가상승의 동시발생을 의미하는 단어는?경기침체, 물가상승의 동시발생을 의미하는 단어는?
+                                                </p>
+                                            </div>
+                                            <div class="btn_wrap">
+                                                <a href="#">결과 보기</a>
+                                                <a href="#" class="next">다음 문제</a>
+                                            </div>
+                                        </div>
+                                        <div class="quiz_btm">
+                                            <p>관련 기사 보러가기 <i class="xi-arrow-right"></i></p>
+                                            <a href="">기사 제목</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //해설보기 -->
+
+                                <!-- 정답확인 -->
+                                <div class="quizlist">
+                                    <div class="quiz_q">
+                                        <p>
+                                            Q.
+                                            <span>경기침체, 물가상승의 동시발생을 의미하는 단어는?</span>
+                                        </p>
+                                        <a href="">해설보기</a>
+                                    </div>
+                                    <div class="quiz_a">
+                                        <div class="quiz_a_main">
+                                            <div class="quiz_state">
+                                                <!-- <p class="wrong">오답입니다. 다음 문제에 도전해보세요.</p> -->
+                                                <p class="correct">정답입니다!  경험치 +<span>2</span> 를 획득하셨습니다!</p>
+                                            </div>
+                                            <ul class="quiz_obj">
+                                                <li class="correct"> <!-- 오답일시 correct 클래스 부여 -->
+                                                    <label for="quiz_correct">
+                                                        <input type="radio" id="quiz_correct" name="quiz_correct" checked disabled>
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 1
+                                                            </p>
+                                                            <div class="check_icon">
+                                                                <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span>
+                                                                <!-- <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span> -->
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="">
+                                                        <input type="radio" id="" name="">
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 2
+                                                            </p>
+                                                            
+                                                            <div class="check_icon">
+                                                                <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span>
+                                                                <!-- <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span> -->
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="">
+                                                        <input type="radio" id="" name="">
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 3
+                                                            </p>
+                                                            <div class="check_icon">
+                                                                <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span>
+                                                                <!-- <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span> -->
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="">
+                                                        <input type="radio" id="" name="">
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 4
+                                                            </p>
+                                                            <div class="check_icon">
+                                                                <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span>
+                                                                <!-- <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span> -->
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <div class="btn_wrap">
+                                                <a href="#">공유하기</a>
+                                                <a href="#" class="next">다음 문제</a>
+                                            </div>
+                                        </div>
+                                        <div class="quiz_btm">
+                                            <p>관련 기사 보러가기 <i class="xi-arrow-right"></i></p>
+                                            <a href="">기사 제목</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //정답확인 -->
+
+                                <!-- 오답 -->
+                                <div class="quizlist">
+                                    <div class="quiz_q">
+                                        <p>
+                                            Q.
+                                            <span>경기침체, 물가상승의 동시발생을 의미하는 단어는?</span>
+                                        </p>
+                                        <a href="">해설보기</a>
+                                    </div>
+                                    <div class="quiz_a">
+                                        <div class="quiz_a_main">
+                                            <div class="quiz_state">
+                                                <p class="wrong">오답입니다. 다음 문제에 도전해보세요.</p>
+                                                <!-- <p class="correct">정답입니다!  경험치 +<span>2</span> 를 획득하셨습니다!</p> -->
+                                            </div>
+                                            <ul class="quiz_obj">
+                                                <li class="wrong"> <!-- ** 오답일시 wrong 클래스 부여 ** -->
+                                                    <label for="quiz_wrong">
+                                                        <input type="radio" id="quiz_wrong" name="quiz_wrong" checked disabled>
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 1
+                                                            </p>
+                                                            <div class="check_icon">
+                                                                <!-- <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span> -->
+                                                                <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li class="correct">
+                                                    <label for="quiz_correct2">
+                                                        <input type="radio" id="quiz_correct2" name="quiz_correct2" checked disabled>
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 2
+                                                            </p>
+                                                            
+                                                            <div class="check_icon">
+                                                                <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span>
+                                                                <!-- <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span> -->
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="">
+                                                        <input type="radio" id="" name="">
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 3
+                                                            </p>
+                                                            <div class="check_icon">
+                                                                <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span>
+                                                                <!-- <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span> -->
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="">
+                                                        <input type="radio" id="" name="">
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 4
+                                                            </p>
+                                                            <div class="check_icon">
+                                                                <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span>
+                                                                <!-- <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span> -->
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <div class="btn_wrap">
+                                                <a href="#">공유하기</a>
+                                                <a href="#" class="next">다음 문제</a>
+                                            </div>
+                                        </div>
+                                        <div class="quiz_btm">
+                                            <p>관련 기사 보러가기 <i class="xi-arrow-right"></i></p>
+                                            <a href="">기사 제목</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //오답 -->
+                            </div>
+                        </div>
+
+                        <div class="tab_content" id="maintab_2">
+                            <div class="khrank_top">
+                                <div class="search_wrap">
+                                    <select name="" id="">
+                                        <option value="2022년">2022년</option>
+                                        <option value="2021년">2021년</option>
+                                        <option value="2020년">2020년</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="1월">1월</option>
+                                        <option value="2월">2월</option>
+                                        <option value="3월">3월</option>
+                                        <option value="4월">4월</option>
+                                        <option value="5월">5월</option>
+                                        <option value="6월">6월</option>
+                                        <option value="7월">7월</option>
+                                        <option value="8월">8월</option>
+                                        <option value="9월">9월</option>
+                                        <option value="10월">10월</option>
+                                        <option value="11월">11월</option>
+                                        <option value="12월">12월</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="일간">일간</option>
+                                        <option value="주간">주간</option>
+                                        <option value="월간">월간</option>
+                                    </select>
+                                    <input type="date">
+                                </div>
+                            </div>
+                            <div class="khrank_area">
+                                <table>
+                                    <colgroup>
+                                        <col width="20%">
+                                        <col width="40%">
+                                        <col width="40%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>순위</th>
+                                            <th>ID</th>
+                                            <th>포인트</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    1
+                                                    <span class="fst_icon">
+                                                        <i class="xi-crown"></i>
+                                                    </span>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    2
+                                                </p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>3</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>4</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>5</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>6</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>7</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>8</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>9</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>10</p>
+                                            </td>
+                                            <td>
+                                                liliwang1212
+                                            </td>
+                                            <td>
+                                                99,999
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ** //오늘의 퀴즈 콘텐츠 ** -->
+
+                </div>
+                <!-- // cont-main -->
+
+            </div>
+            <!-- // inner -->
+        </div>
+        <!-- // section -->
+		</div>
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+
+        //탭 링크
+        $('.maintab li').click(function(){
+            $(".maintab li").removeClass("active");
+            $(this).addClass("active");
+            var tab_id = $(this).attr('data-tab');
+            $('.tab_content').removeClass('active');
+
+            $(".tab_content#"+tab_id).addClass('active');
+        });
+
+    </script>
+</body>
+</html>

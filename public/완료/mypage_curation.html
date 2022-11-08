@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/mypage.css">
+    <link rel="stylesheet" type="text/css" href="../css/mypage_m.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrap cont">
+            <article class="body">
+
+                <!-- **큐레이션** -->
+                <div class="mypagecuration khmypage">
+                    <h3 class="title">
+                        큐레이션
+                    </h3>
+                    <form action="">
+                        <div class="search_box">
+                            <input type="text" placeholder="기사 제목으로 검색하세요.">
+                            <button type="submit" class="search_btn">
+                                <i class="xi-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div class="curationarea">
+                        <div class="curation_top">
+                            <p class="curation_total">
+                                총 <span>0</span> 건의 기사 큐레이션 저장
+                            </p>    
+                            
+                            <ul class="curation_menu">
+                                <li class="curation_edit">
+                                    <a href="mypage_curation_edit.html">
+                                        편집하기 <i class="xi-pen-o"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="info_list_area">
+                            <p class="hl">
+                                아직 생성된 큐레이션이 없습니다. <br>
+                                큐레이션을 만들고 기사를 저장해 보세요!
+                            </p>
+                        </div>
+
+                        <ul class="curation_list">
+                            <li>
+                                <a href="../일부완료/mypage_curation_detail.html" class="curation_box">
+                                    <div class="img_box">
+                                        <img src="https://img.khan.co.kr/news/c/320x220/2022/09/15/news-p.v1.20220915.98d40b228d2b432f8e5b42b40a953a07_P1.jpg" class="thumb_g" alt="">
+                                    </div>
+                                    <p class="curation_title">문화 예술 모음 문화 예술 모음 문화 예술 모음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../일부완료/mypage_curation_detail.html" class="curation_box">
+                                    <div class="img_box">
+                                        <img src="https://img.khan.co.kr/news/c/320x220/2022/09/15/news-p.v1.20220915.98d40b228d2b432f8e5b42b40a953a07_P1.jpg" class="thumb_g" alt="">
+                                    </div>
+                                    <p class="curation_title">정치 경제 모음</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../일부완료/mypage_curation_detail.html" class="curation_box">
+                                    <div class="img_box">
+                                        <img src="https://img.khan.co.kr/news/c/320x220/2022/09/15/news-p.v1.20220915.98d40b228d2b432f8e5b42b40a953a07_P1.jpg" class="thumb_g" alt="">
+                                    </div>
+                                    <p class="curation_title">스포츠 모음</p>
+                                </a>
+                            </li>
+                            <li class="curation_add">
+                                <p>
+                                    <i class="xi-plus"></i>
+                                    큐레이션 만들기
+                                </p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!--// **큐레이션** -->
+
+            </article>
+    
+            <!-- 좌측 메뉴 -->
+            <div class="navi-wrap">
+                <p class="tit">마이페이지</p>
+                <dl><!-- **네비게이션 메뉴 추가** -->
+                    <dt>
+                        <a href="../일부완료/mypage_quiz.html">퀴즈내역</a>
+                    </dt>
+                </dl>
+                <dl><!-- **네비게이션 메뉴 추가** -->
+                    <dt>
+                        <a href="mypage_curation.html">큐레이션</a>
+                    </dt>
+                </dl>
+                <dl><!-- **네비게이션 메뉴 추가** -->
+                    <dt>
+                        <a href="../일부완료/mypage_news.html">뉴스 소비량</a>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt>내 정보 관리</dt>
+                    <dd><a href="//member.khan.co.kr/mypage/info/" title="정보수정">정보수정</a></dd>
+                    <dd><a href="//member.khan.co.kr/mypage/info/check_pw.html" title="개인정보 변경">개인정보 변경</a></dd>
+                    <dd><a href="//member.khan.co.kr/mypage/info/modify_pw.html" title="비밀번호 변경">비밀번호 변경</a></dd>
+                    <dd><a href="javascript:;" onclick="logout();" title="로그아웃">로그아웃</a></dd>
+                </dl>
+                        <ul>
+                    <li class="reply"><a href="//member.khan.co.kr/mypage/more/my_livere.html" title="내댓글">내댓글</a></li>
+                    <li class="activity"><a href="//member.khan.co.kr/mypage/more/my_recently.html" title="최근활동">최근활동</a></li>
+                </ul>
+            </div>
+            <!-- // 좌측 메뉴 -->
+        </div>
+        <!-- // wrap cont -->
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

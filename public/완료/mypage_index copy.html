@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/mypage.css">
+    <link rel="stylesheet" type="text/css" href="../css/mypage_m.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrap cont">
+            <article class="body">
+                <div class="area profile_info_area">
+                    <!-- 프로필 노출 구역 -->
+                    <p class="welcome_msg">안녕하세요.</p>
+                    <div class="profile_txt_wrap">
+                        <h3><strong>경향54177</strong>님
+                            <span class="badge">뱃지위치</span><!-- **뱃지위치** -->
+                        </h3>
+                        
+                    <div class="pt_rt_btn"><a href="https://member.khan.co.kr/mypage/info/" title="정보 수정">정보 수정</a></div>
+                    </div>
+                    <!-- // 프로필 노출 구역 -->
+                </div>
+    
+                <div class="fn_area_wrap">
+                    <dl class="fn_area"><!-- **퀴즈내역 메뉴 추기** -->
+                        <dt>
+                            <a href="../일부완료/mypage_quiz.html">퀴즈내역</a>
+                        </dt>
+                    </dl>
+                    <dl class="fn_area"><!-- **큐레이션 메뉴 추기**  -->
+                        <dt>
+                            <a href="mypage_curation.html">큐레이션</a>
+                        </dt>
+                    </dl>
+                    <dl class="fn_area">
+                        <dt>
+                            <a href="">구독기자</a>
+                        </dt>
+                    </dl>
+                    <dl class="fn_area">
+                        <dt>
+                            <a href="">구독 이슈/연재</a>
+                        </dt>
+                    </dl>
+                    <dl class="fn_area"><!-- **뉴스 소비량 메뉴 추기**  -->
+                        <dt>
+                            <a href="../일부완료/mypage_news.html">뉴스 소비량
+                                <p>책 <strong>0</strong>권</p>
+                            </a>
+                        </dt>
+                    </dl>
+                </div>
+    
+                <!-- 맞춤 추천 기사 -->
+                <div class="area issue_recommend">
+                </div>
+                <!-- // 맞춤 추천 기사 -->
+    
+                <!-- 배너 영역 -->
+                <div class="mp_area_bnr" style="background-color:#5277d2;">
+                </div>
+                <!-- // 배너 영역 -->
+    
+                <div class="tab_menu_btn">
+                    <a id="tab_curation" class="on"><span>큐레이션</span></a><!-- **큐레이션 메뉴 추가** -->
+                    <a id="tab_bookmark" class=""><span><em class="ico_bm_lock"></em>북마크</span></a>
+                    <a class="" id="tab_livere"><span>내댓글</span></a>
+                    <a id="tab_recently"><span>최근활동</span></a>
+                </div>
+    
+                <!-- **큐레이션 메뉴 추기**  -->
+                <div id="div_curation" class="area wrap_list_df_thumb">
+                    <div class="info_list_area">
+                        <p class="hl">작성하신 큐레이션이 없습니다.</p>
+                    </div>
+                    <ul class="curation_list">
+                        <li>
+                            <a href="../일부완료/mypage_curation_detail.html" class="curation_box">
+                                <div class="img_box">
+                                    <img src="https://img.khan.co.kr/news/c/320x220/2022/09/15/news-p.v1.20220915.98d40b228d2b432f8e5b42b40a953a07_P1.jpg" class="thumb_g" alt="">
+                                </div>
+                                <p class="curation_title">문화 예술 모음 문화 예술 모음 문화 예술 모음</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../일부완료/mypage_curation_detail.html" class="curation_box">
+                                <div class="img_box">
+                                    <img src="https://img.khan.co.kr/news/c/320x220/2022/09/15/news-p.v1.20220915.98d40b228d2b432f8e5b42b40a953a07_P1.jpg" class="thumb_g" alt="">
+                                </div>
+                                <p class="curation_title">정치 경제 모음</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../일부완료/mypage_curation_detail.html" class="curation_box">
+                                <div class="img_box">
+                                    <img src="https://img.khan.co.kr/news/c/320x220/2022/09/15/news-p.v1.20220915.98d40b228d2b432f8e5b42b40a953a07_P1.jpg" class="thumb_g" alt="">
+                                </div>
+                                <p class="curation_title">스포츠 모음</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- // **큐레이션 메뉴 추기**  -->
+
+                <!-- 북마크 기사 리스트 -->
+                <div id="div_bookmark" class="area wrap_list_df_thumb hide">
+                </div>
+                <!-- // 북마크 기사 리스트 -->
+    
+                <!-- 내댓글 리스트 -->
+                <div id="div_livere" class="area wrap_list_df_thumb hide">
+                </div>
+                <!-- // 내댓글 리스트 -->
+    
+                <!-- 최근 활동 리스트 -->
+                <div id="div_recently" class="area wrap_list_df_thumb hide">
+                </div>
+                <!-- // 최근 활동 리스트 -->
+
+            
+            </article>
+    
+            <!-- 좌측 메뉴 -->
+            <div class="navi-wrap">
+                <p class="tit">마이페이지</p>
+                <dl><!-- **네비게이션 메뉴 추가** -->
+                    <dt>
+                        <a href="../일부완료/mypage_quiz.html">퀴즈내역</a>
+                    </dt>
+                </dl>
+                <dl><!-- **네비게이션 메뉴 추가** -->
+                    <dt>
+                        <a href="mypage_curation.html">큐레이션</a>
+                    </dt>
+                </dl>
+                <dl><!-- **네비게이션 메뉴 추가** -->
+                    <dt>
+                        <a href="../일부완료/mypage_news.html">뉴스 소비량</a>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt>내 정보 관리</dt>
+                    <dd><a href="//member.khan.co.kr/mypage/info/" title="정보수정">정보수정</a></dd>
+                    <dd><a href="//member.khan.co.kr/mypage/info/check_pw.html" title="개인정보 변경">개인정보 변경</a></dd>
+                    <dd><a href="//member.khan.co.kr/mypage/info/modify_pw.html" title="비밀번호 변경">비밀번호 변경</a></dd>
+                    <dd><a href="javascript:;" onclick="logout();" title="로그아웃">로그아웃</a></dd>
+                </dl>
+                        <ul>
+                    <li class="reply"><a href="//member.khan.co.kr/mypage/more/my_livere.html" title="내댓글">내댓글</a></li>
+                    <li class="activity"><a href="//member.khan.co.kr/mypage/more/my_recently.html" title="최근활동">최근활동</a></li>
+                </ul>
+            </div>
+            <!-- // 좌측 메뉴 -->
+        </div>
+        <!-- // wrap cont -->
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

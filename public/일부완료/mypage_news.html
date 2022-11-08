@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/mypage.css">
+    <link rel="stylesheet" type="text/css" href="../css/mypage_m.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrap cont">
+            <article class="body">
+
+                <!-- **뉴스 소비량** -->
+                <div class="mypagenews khmypage">
+                    <h3 class="title">
+                        뉴스 소비량
+                    </h3>
+                    
+                    <div class="info_list_area">
+                        <p class="hl">
+                            아직 완독한 기사 내용이 없습니다. <br>
+                            뉴스를 끝까지 완독해보세요!
+                        </p>
+                    </div>
+
+                    <ul class="newstotal">
+                        <li>
+                            <h4>
+                                <span class="count_num">6512</span>개
+                            </h4>
+                            <p>
+                                완독한 기사
+                            </p>
+                        </li>
+                        <li>
+                            <h4>
+                                <span class="count_num2">2200000</span>
+                            </h4>
+                            <p>
+                                읽은 글자 수
+                            </p>
+                        </li>
+                        <li>
+                            <h4>
+                                <span class="count_num3">19</span>권
+                            </h4>
+                            <p>
+                                책으로 환산
+                            </p>
+                        </li>
+                    </ul>
+
+                    <h3 class="title">
+                        분야별 소비량
+                    </h3>
+
+                    <div class="newsarea">
+                        <div class="newstab_area">
+                            <ul class="newstab mypagesubtab">
+                                <li class="active" data-tab="newstab_1">
+                                    정치
+                                </li>
+                                <li data-tab="newstab_2">
+                                    경제
+                                </li>
+                                <li data-tab="newstab_3">
+                                    사회
+                                </li>
+                                <li data-tab="newstab_4">
+                                    국제
+                                </li>
+                                <li data-tab="newstab_5">
+                                    문화
+                                </li>
+                                <li data-tab="newstab_6">
+                                    스포츠
+                                </li>
+                                <li data-tab="newstab_7">
+                                    오피니언
+                                </li>
+                                <li data-tab="newstab_8">
+                                    과학
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab_content active" id="newstab_1">
+                            <ul class="newstotal">
+                                <li>
+                                    <h4>
+                                        <span class="count_num">6512</span>개
+                                    </h4>
+                                    <p>
+                                        완독한 기사
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>
+                                        <span class="count_num2">2200000</span>
+                                    </h4>
+                                    <p>
+                                        읽은 글자 수
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>
+                                        <span class="count_num3">19</span>권
+                                    </h4>
+                                    <p>
+                                        책으로 환산
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--// **뉴스 소비량** -->
+
+            </article>
+    
+            <!-- 좌측 메뉴 -->
+            <div class="navi-wrap">
+                <p class="tit">마이페이지</p>
+                <dl><!-- **네비게이션 메뉴 추가** -->
+                    <dt>
+                        <a href="mypage_quiz.html">퀴즈내역</a>
+                    </dt>
+                </dl>
+                <dl><!-- **네비게이션 메뉴 추가** -->
+                    <dt>
+                        <a href="../완료/mypage_curation.html">큐레이션</a>
+                    </dt>
+                </dl>
+                <dl><!-- **네비게이션 메뉴 추가** -->
+                    <dt>
+                        <a href="mypage_news.html">뉴스 소비량</a>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt>내 정보 관리</dt>
+                    <dd><a href="//member.khan.co.kr/mypage/info/" title="정보수정">정보수정</a></dd>
+                    <dd><a href="//member.khan.co.kr/mypage/info/check_pw.html" title="개인정보 변경">개인정보 변경</a></dd>
+                    <dd><a href="//member.khan.co.kr/mypage/info/modify_pw.html" title="비밀번호 변경">비밀번호 변경</a></dd>
+                    <dd><a href="javascript:;" onclick="logout();" title="로그아웃">로그아웃</a></dd>
+                </dl>
+                        <ul>
+                    <li class="reply"><a href="//member.khan.co.kr/mypage/more/my_livere.html" title="내댓글">내댓글</a></li>
+                    <li class="activity"><a href="//member.khan.co.kr/mypage/more/my_recently.html" title="최근활동">최근활동</a></li>
+                </ul>
+            </div>
+            <!-- // 좌측 메뉴 -->
+        </div>
+        <!-- // wrap cont -->
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

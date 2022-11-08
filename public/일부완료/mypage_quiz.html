@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/mypage.css">
+    <link rel="stylesheet" type="text/css" href="../css/mypage_m.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrap cont">
+            <article class="body">
+
+                <!-- **퀴즈내역** -->
+                <div class="mypagequiz khmypage">
+                    <h3 class="title">
+                        퀴즈내역
+                    </h3>
+                    <form action="">
+                        <div class="search_box">
+                            <input type="text" placeholder="퀴즈 제목으로 검색하세요.">
+                            <button type="submit" class="search_btn">
+                                <i class="xi-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div class="quizarea">
+                        <ul class="quizmenu mypagetab">
+                            <li class="active" data-tab="quizmenu_1">
+                                전체 <span>80</span>
+                                <i class="xi-angle-down"></i>
+                            </li>
+                            <li class="" data-tab="quizmenu_2">
+                                맞춘 퀴즈 <span>60</span>
+                                <i class="xi-angle-down"></i>
+                            </li>
+                            <li class="" data-tab="quizmenu_3">
+                                틀린 퀴즈 <span>20</span>
+                                <i class="xi-angle-down"></i>
+                            </li>
+                        </ul>
+                        <div class="quizlist_wrap tab_content active" id="quizmenu_1">
+                            <div class="info_list_area">
+                                <p class="hl">
+                                    아직 퀴즈 내역이 없습니다. <br>
+                                    오늘의 퀴즈 페이지에서 퀴즈를 풀어보세요!
+                                </p>
+                            </div>
+                            <ul class="quizlist">
+                                <li>
+                                    <div class="quiz_q">
+                                        <p>
+                                            Q.
+                                            <span>경기침체, 물가상승의 동시발생을 의미하는 단어는?</span>
+                                        </p>
+                                        <a href="">해설보기</a>
+                                    </div>
+                                    <div class="quiz_a">
+                                        <ul class="quiz_a_top">
+                                            <li>
+                                                <p>정답률 : <span>90</span>%</p>
+                                            </li>
+                                            <li>
+                                                <p>총 획득 경험치 : <span>344</span><p>
+                                            </li>
+                                        </ul>
+                                        <div class="quiz_a_main">
+                                            <div class="quiz_state">
+                                                <!-- <p class="wrong">오답입니다. 다음 문제에 도전해보세요.</p> -->
+                                                <p class="correct">정답입니다!  경험치 +<span>2</span> 를 획득하셨습니다!</p>
+                                            </div>
+                                            <ul class="quiz_obj">
+                                                <li class="correct">
+                                                    <label for="quiz_obj_1">
+                                                        <input type="radio" id="quiz_obj_1" name="quiz_obj_1" checked disabled>
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 1
+                                                            </p>
+                                                            
+                                                            <div class="check_icon">
+                                                                <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span>
+                                                                <!-- <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span> -->
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li class="wrong">
+                                                    <label for="">
+                                                        <input type="radio" id="" name="">
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 2
+                                                            </p>
+                                                            
+                                                            <div class="check_icon">
+                                                                <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span>
+                                                                <!-- <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span> -->
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="">
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 3
+                                                            </p>
+                                                            <input type="radio" id="" name="">
+                                                            <div class="check_icon">
+                                                                <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span>
+                                                                <!-- <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span> -->
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="quiz_obj_4">
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 4
+                                                            </p>
+                                                            <input type="radio" id="quiz_obj_4" name="quiz_obj" disabled>
+                                                            <div class="check_icon">
+                                                                <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span>
+                                                                <!-- <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span> -->
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <div class="btn_wrap">
+                                                <a href="">공유하기</a>
+                                            </div>
+                                            <div class="quiz_btm">
+                                                <p>관련 기사 보러가기 <i class="xi-arrow-right"></i></p>
+                                                <a href="">기사 제목</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="quiz_q">
+                                        <p>
+                                            Q.
+                                            <span>경기침체, 물가상승의 동시발생을 의미하는 단어는?</span>
+                                        </p>
+                                        <a href="">해설보기</a>
+                                    </div>
+                                    <div class="quiz_a">
+                                        <ul class="quiz_a_top">
+                                            <li>
+                                                <p>정답률 : <span>90</span>%</p>
+                                            </li>
+                                            <li>
+                                                <p>총 획득 경험치 : <span>344</span><p>
+                                            </li>
+                                        </ul>
+                                        <div class="quiz_a_main">
+                                            <div class="quiz_state">
+                                                <p class="wrong">오답입니다. 다음 문제에 도전해보세요.</p>
+                                                <!-- <p class="correct">정답입니다!  경험치 +<span>2</span> 를 획득하셨습니다!</p> -->
+                                            </div>
+                                            <ul class="quiz_obj">
+                                                <li class="correct">
+                                                    <label for="quiz_obj_2_1">
+                                                        <input type="radio" id="quiz_obj_2_1" name="quiz_obj_2_1" checked disabled>
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 1
+                                                            </p>
+                                                            <div class="check_icon">
+                                                                <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span>
+                                                                <!-- <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span> -->
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li class="wrong">
+                                                    <label for="quiz_obj_2_2">
+                                                        <input type="radio" id="quiz_obj_2_2" name="quiz_obj_2_2" checked disabled>
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 2
+                                                            </p>
+                                                            
+                                                            <div class="check_icon">
+                                                                <!-- <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span> -->
+                                                                <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="">
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 3
+                                                            </p>
+                                                            <input type="radio" id="" name="">
+                                                            <div class="check_icon">
+                                                                <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span>
+                                                                <!-- <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span> -->
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="">
+                                                        <div class="col-group">
+                                                            <p>
+                                                                보기 4
+                                                            </p>
+                                                            <input type="radio" id="" name="">
+                                                            <div class="check_icon">
+                                                                <span class="correct">
+                                                                    <i class="xi-check"></i>
+                                                                </span>
+                                                                <!-- <span class="wrong">
+                                                                    <i class="xi-close"></i>
+                                                                </span> -->
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <div class="btn_wrap">
+                                                <a href="">공유하기</a>
+                                            </div>
+                                            <div class="quiz_btm">
+                                                <p>관련 기사 보러가기 <i class="xi-arrow-right"></i></p>
+                                                <a href="">기사 제목</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="page_nav col-group">
+                                <li><a href=""><i class="xi-angle-left"></i></a></li>
+                                <li><a href="#" class="now">1</a></li>
+                                <li><a href="#" class="">2</a></li>
+                                <li><a href="#" class="">3</a></li>
+                                <li><a href="#" class="">4</a></li>
+                                <li><a href="#" class="">5</a></li>
+                                <li><a href="#" class="">6</a></li>
+                                <li><a href="#" class="">7</a></li>
+                                <li><a href="#" class="">8</a></li>
+                                <li><a href="#" class="">9</a></li>
+                                <li><a href="#" class="">10</a></li>
+                                <li><a href=""><i class="xi-angle-right"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="quizlist_wrap tab_content" id="quizmenu_2">
+                            <div class="info_list_area">
+                                <p class="hl">
+                                    아직 퀴즈 내역이 없습니다. <br>
+                                    오늘의 퀴즈 페이지에서 퀴즈를 풀어보세요!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="quizlist_wrap tab_content" id="quizmenu_3">
+                            <div class="info_list_area">
+                                <p class="hl">
+                                    아직 퀴즈 내역이 없습니다. <br>
+                                    오늘의 퀴즈 페이지에서 퀴즈를 풀어보세요!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// **퀴즈내역** -->
+
+            </article>
+    
+            <!-- 좌측 메뉴 -->
+            <div class="navi-wrap">
+                <p class="tit">마이페이지</p>
+                <dl><!-- **네비게이션 메뉴 추가** -->
+                    <dt>
+                        <a href="mypage_quiz.html">퀴즈내역</a>
+                    </dt>
+                </dl>
+                <dl><!-- **네비게이션 메뉴 추가** -->
+                    <dt>
+                        <a href="../완료/mypage_curation.html">큐레이션</a>
+                    </dt>
+                </dl>
+                <dl><!-- **네비게이션 메뉴 추가** -->
+                    <dt>
+                        <a href="mypage_news.html">뉴스 소비량</a>
+                    </dt>
+                </dl>
+                <dl>
+                    <dt>내 정보 관리</dt>
+                    <dd><a href="//member.khan.co.kr/mypage/info/" title="정보수정">정보수정</a></dd>
+                    <dd><a href="//member.khan.co.kr/mypage/info/check_pw.html" title="개인정보 변경">개인정보 변경</a></dd>
+                    <dd><a href="//member.khan.co.kr/mypage/info/modify_pw.html" title="비밀번호 변경">비밀번호 변경</a></dd>
+                    <dd><a href="javascript:;" onclick="logout();" title="로그아웃">로그아웃</a></dd>
+                </dl>
+                        <ul>
+                    <li class="reply"><a href="//member.khan.co.kr/mypage/more/my_livere.html" title="내댓글">내댓글</a></li>
+                    <li class="activity"><a href="//member.khan.co.kr/mypage/more/my_recently.html" title="최근활동">최근활동</a></li>
+                </ul>
+            </div>
+            <!-- // 좌측 메뉴 -->
+        </div>
+        <!-- // wrap cont -->
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
